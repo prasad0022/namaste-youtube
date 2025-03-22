@@ -6,9 +6,13 @@ import Body from "./components/Body/Body";
 const App = () => {
   return (
     <div className="bg-black text-white">
-      <Header />
-      {/* <Sidebar />
-      <Body /> */}
+      <div className="fixed top-0 left-0 w-full bg-black z-50 shadow-md">
+        <Header />
+      </div>
+      <div className="flex mt-16 h-screen">
+        <Sidebar />
+        <Body />
+      </div>
     </div>
   );
 };
