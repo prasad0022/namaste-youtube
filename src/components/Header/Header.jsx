@@ -1,13 +1,24 @@
 import React from "react";
 import Search from "./Search";
+import { useDispatch } from "react-redux";
+import { setIsMenu } from "../../utils/store/sidebarSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className="py-3 px-8 flex justify-between items-center">
       <div className="flex items-center cursor-pointer">
         <img
-          width="48"
-          height="48"
+          onClick={() => {
+            dispatch(setIsMenu());
+          }}
+          className="w-6"
+          src="https://img.icons8.com/ios-filled/50/FFFFFF/menu--v6.png"
+          alt="menu--v6"
+        />
+        <img
+          className="ml-8"
           src="https://img.icons8.com/doodle/48/youtube-play--v2.png"
           alt="youtube-play--v2"
         />
