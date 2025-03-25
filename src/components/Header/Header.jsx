@@ -2,6 +2,7 @@ import React from "react";
 import Search from "./Search";
 import { useDispatch } from "react-redux";
 import { setIsMenu } from "../../utils/store/sidebarSlice";
+import { NavLink } from "react-router";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,9 @@ const Header = () => {
           src="https://img.icons8.com/doodle/48/youtube-play--v2.png"
           alt="youtube-play--v2"
         />
-        <span className="text-2xl font-medium">YouTube</span>
+        <NavLink to={"/"}>
+          <span className="text-2xl font-medium">YouTube</span>
+        </NavLink>
       </div>
       <Search />
       <p className="w-25 bg-neutral-800 hover:bg-neutral-700 cursor-pointer text-center rounded-full h-10 p-2 text-[15px] font-medium">
