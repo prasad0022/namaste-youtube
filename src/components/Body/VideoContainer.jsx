@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { addVideoList } from "../../utils/store/videoSlice";
 import { YOUTUBE_API } from "../../utils/constants";
 import { NavLink } from "react-router";
+import { setIsMenu } from "../../utils/store/sidebarSlice";
 
 const VideoContainer = () => {
   const { videoList } = useSelector((store) => store.video);
@@ -23,7 +24,10 @@ const VideoContainer = () => {
     <div className="p-7 overflow-y-auto custom-scrollbar">
       <div className="flex flex-wrap justify-between">
         {videoList?.items?.map((video) => (
-          <NavLink to={"/watch?v=" + video.id}>
+          <NavLink
+            onClick={() => dispatch(setIsMenu())}
+            to={"/watch?v=" + video.id}
+          >
             <VideoCard key={video.id} videoData={video} />
           </NavLink>
         ))}

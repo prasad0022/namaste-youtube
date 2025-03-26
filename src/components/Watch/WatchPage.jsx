@@ -1,11 +1,12 @@
 import React from "react";
 import { useSearchParams } from "react-router";
+import Recommendation from "./Recommendation";
 
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
 
   return (
-    <div className="p-5">
+    <div className="p-5 flex">
       <iframe
         width="1000"
         height="500"
@@ -15,6 +16,9 @@ const WatchPage = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
+      <div className="w-100">
+        <Recommendation />
+      </div>
     </div>
   );
 };
