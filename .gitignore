@@ -13,6 +13,7 @@ dist-ssr
 *.local
 youtube.drawio.png
 src/utils/config.js
+src/utils/firebase.js
 
 # Editor directories and files
 .vscode/*
