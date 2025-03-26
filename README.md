@@ -1,12 +1,37 @@
-# React + Vite
+# Namaste YouTube Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Namaste YouTube is a YouTube-like application built using React. This project focuses on replicating YouTube's core features, including video listings, search functionality, a sidebar menu, and video recommendations.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Video Listing**: Displays a list of videos with thumbnails and metadata.
+- **Search Functionality**: Allows users to search for videos using an interactive search bar.
+- **Sidebar Navigation**: Includes categories like Trending, Music, Movies, News, and more.
+- **Video Player**: Users can watch videos along with recommendations on the watch page.
+- **State Management**: Uses Redux Toolkit for managing the app state.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React.js, Vite
+- **State Management**: Redux Toolkit
+
+## 📦 Installation & Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/prasad0022-namaste-youtube.git
+   cd prasad0022-namaste-youtube
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+4. Open the application at `http://localhost:5173`
+
+## Contributing
+
+Feel free to fork the repo, create a branch, and submit pull requests. Any contributions are welcome! 😊
