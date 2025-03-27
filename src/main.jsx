@@ -7,6 +7,7 @@ import appStore from "./utils/store/appStore.js";
 import { RouterProvider, createBrowserRouter } from "react-router";
 import Body from "./components/Body/Body.jsx";
 import WatchPage from "./components/Watch/WatchPage.jsx";
+import Sidebar from "./components/Sidebar/Sidebar.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -15,7 +16,12 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body />,
+        element: (
+          <>
+            <Sidebar />
+            <Body />
+          </>
+        ),
       },
       {
         path: "/watch",

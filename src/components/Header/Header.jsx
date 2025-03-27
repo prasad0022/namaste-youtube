@@ -23,7 +23,7 @@ const Header = () => {
           src="https://img.icons8.com/doodle/48/youtube-play--v2.png"
           alt="youtube-play--v2"
         />
-        <NavLink onClick={() => dispatch(setIsMenu())} to={"/"}>
+        <NavLink to={"/"}>
           <span className="text-2xl font-medium">YouTube</span>
         </NavLink>
       </div>

@@ -15,6 +15,7 @@ youtube.drawio.png
 src/utils/config.js
 src/utils/firebase.js
 .firebase
+dataconnect
 
 # Editor directories and files
 .vscode/*
