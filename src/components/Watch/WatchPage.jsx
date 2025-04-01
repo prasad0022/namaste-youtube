@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSearchParams } from "react-router";
 import Recommendation from "./Recommendation";
 
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [searchParams]);
 
   return (
     <div className="p-5 flex">
